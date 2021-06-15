@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookManageSystem.controller.BookReturnFrameController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="161.0" text="图书归还">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="800.0" spacing="10.0">
+               <children>
+                  <Button fx:id="checkButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#do_checkButton_event" text="查询未归还图书" />
+                  <Button fx:id="checkButton2" mnemonicParsing="false" onAction="#do_checkButton2_event" text="查询借阅记录" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="325.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="bookReturnTableView" prefHeight="200.0" prefWidth="605.0">
+                    <columns>
+                      <TableColumn fx:id="bidTableColumn" prefWidth="75.0" text="编号" />
+                      <TableColumn fx:id="reader_idTableColumn" prefWidth="75.0" text=" 读者编号" />
+                        <TableColumn fx:id="reader_nameTableColumn" prefWidth="75.0" text="读者姓名" />
+                        <TableColumn fx:id="book_nameTableColumn" prefWidth="64.45614624023438" text="图书名称" />
+                        <TableColumn fx:id="lendDateTableColumn" prefWidth="75.456298828125" text="借阅时间" />
+                        <TableColumn fx:id="limitedDateTableColumn" prefWidth="100.49771118164062" text="截止时间" />
+                        <TableColumn fx:id="returnDateTableColumn" prefWidth="106.0" text="归还时间" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox prefHeight="209.0" prefWidth="800.0">
+               <children>
+                  <VBox prefHeight="209.0" prefWidth="890.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label text="编号：" />
+                                    <Label text="读者姓名：" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="idTextField" prefHeight="27.0" prefWidth="91.0" />
+                                    <TextField fx:id="reader_nameTextField" prefHeight="27.0" prefWidth="92.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label text="读者编号：" />
+                                    <Label text="图书名称" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="reader_idTextField" prefHeight="27.0" prefWidth="83.0" />
+                                    <TextField fx:id="book_nameTextField" prefHeight="27.0" prefWidth="83.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label text="借阅时间：" />
+                                    <Label text="截止时间：" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="lendDateTextField" />
+                                    <TextField fx:id="limitedDateTextField" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Label text="归还时间：" />
+                              <TextField fx:id="returnDateTextField" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="250.0">
+                           <children>
+                              <Button fx:id="returnButton" mnemonicParsing="false" onAction="#do_returnButton_event" text="归还">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button fx:id="resetButton2" mnemonicParsing="false" onAction="#do_resetButton2_event" text="重置">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/reset.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <panes>
+    <TitledPane animated="false" text="借书">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="45.0" layoutY="25.0" />
+                  <Button layoutX="254.0" layoutY="25.0" mnemonicParsing="false" text="查询" />
+                  <TableView layoutX="35.0" layoutY="73.0" prefHeight="200.0" prefWidth="527.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="书名" />
+                        <TableColumn prefWidth="75.0" text="书籍编号" />
+                        <TableColumn prefWidth="75.0" text="作者" />
+                        <TableColumn prefWidth="75.0" text="库存" />
+                        <TableColumn prefWidth="75.0" text="作者" />
+                        <TableColumn prefWidth="75.0" text="借还" />
+                        <TableColumn prefWidth="75.0" text="详情" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>

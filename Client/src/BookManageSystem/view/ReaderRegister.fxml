@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookManageSystem.controller.ReaderRegister">
+   <children>
+      <Label layoutX="50.0" layoutY="34.0" text="姓名：" />
+      <TextField fx:id="name" layoutX="97.0" layoutY="29.0" />
+      <Label layoutX="45.0" layoutY="67.0" text="用户名：" />
+      <Label layoutX="45.0" layoutY="99.0" text="密码：" />
+      <Label layoutX="45.0" layoutY="134.0" text="再次输入密码：" />
+      <Label layoutX="45.0" layoutY="166.0" text="性别：" />
+      <Label layoutX="45.0" layoutY="198.0" text="地址：" />
+      <Label layoutX="45.0" layoutY="233.0" text="生日：" />
+      <Label layoutX="45.0" layoutY="268.0" text="电话号码：" />
+      <TextField fx:id="user_name" layoutX="97.0" layoutY="62.0" />
+      <TextField fx:id="password" layoutX="97.0" layoutY="94.0" />
+      <TextField fx:id="password2" layoutX="146.0" layoutY="129.0" />
+      <TextField fx:id="address" layoutX="84.0" layoutY="193.0" />
+      <TextField fx:id="birthday" layoutX="84.0" layoutY="228.0" promptText="2020-01-01" />
+      <TextField fx:id="phone" layoutX="110.0" layoutY="263.0" />
+      <RadioButton fx:id="male" layoutX="100.0" layoutY="166.0" mnemonicParsing="false" text="男">
+         <toggleGroup>
+            <ToggleGroup fx:id="sex" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="165.0" layoutY="166.0" mnemonicParsing="false" text="女" toggleGroup="$sex" />
+      <Button fx:id="registerButton" layoutX="44.0" layoutY="305.0" mnemonicParsing="false" onAction="#do_registerButton_event" text="注册" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AdminManage">
+   <children>
+      <TabPane prefHeight="539.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="图书类别管理">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Accordion prefHeight="510.0" prefWidth="600.0">
+                          <panes>
+                            <TitledPane animated="false" text="图书类别添加">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="215.0" layoutY="37.0" text="图书类别添加功能" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="72.0" layoutY="108.0" text="图书类别名称：" />
+                                          <Label layoutX="72.0" layoutY="159.0" text="图书类别描述：" />
+                                          <TextField layoutX="183.0" layoutY="103.0" prefHeight="27.0" prefWidth="215.0" />
+                                          <TextArea layoutX="183.0" layoutY="153.0" prefHeight="122.0" prefWidth="298.0" />
+                                          <Button layoutX="156.0" layoutY="305.0" mnemonicParsing="false" text="添加" />
+                                          <Button layoutX="376.0" layoutY="305.0" mnemonicParsing="false" text="重置" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="图书类别维护">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="215.0" layoutY="32.0" text="图书类别维护功能" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="125.0" layoutY="78.0" text="图书类别名称：" />
+                                          <TextField layoutX="231.0" layoutY="72.0" />
+                                          <Button layoutX="410.0" layoutY="71.0" mnemonicParsing="false" text="查询" />
+                                          <TableView layoutX="108.0" layoutY="111.0" prefHeight="157.0" prefWidth="419.0">
+                                            <columns>
+                                              <TableColumn prefWidth="127.0" text="编号" />
+                                              <TableColumn minWidth="0.0" prefWidth="135.0" text="图书类别名称" />
+                                                <TableColumn minWidth="0.0" prefWidth="132.0" text="图书类别描述" />
+                                                <TableColumn minWidth="1.0" prefWidth="24.0" text="+" />
+                                            </columns>
+                                          </TableView>
+                                          <Label layoutX="112.0" layoutY="286.0" text="编号：" />
+                                          <Label layoutX="269.0" layoutY="288.0" text="图书类别名称：" />
+                                          <TextField layoutX="157.0" layoutY="282.0" prefHeight="27.0" prefWidth="100.0" />
+                                          <TextField layoutX="365.0" layoutY="285.0" />
+                                          <Label layoutX="110.0" layoutY="323.0" text="描述：" />
+                                          <TextArea layoutX="158.0" layoutY="322.0" prefHeight="50.0" prefWidth="369.0" />
+                                          <Button layoutX="202.0" layoutY="391.0" mnemonicParsing="false" text="修改" />
+                                          <Button layoutX="370.0" layoutY="391.0" mnemonicParsing="false" text="删除" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="图书管理">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Accordion prefHeight="511.0" prefWidth="609.0">
+                          <panes>
+                            <TitledPane animated="false" text="图书添加">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="241.0" layoutY="30.0" text="图书添加功能" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="75.0" layoutY="76.0" text="图书名称：" />
+                                          <TextField layoutX="146.0" layoutY="72.0" prefHeight="27.0" prefWidth="128.0" />
+                                          <Label layoutX="287.0" layoutY="76.0" text="图书作者：" />
+                                          <TextField layoutX="359.0" layoutY="72.0" />
+                                          <Label layoutX="75.0" layoutY="123.0" text="作者性别：" />
+                                          <RadioButton layoutX="146.0" layoutY="123.0" mnemonicParsing="false" text="男" />
+                                          <RadioButton layoutX="204.0" layoutY="123.0" mnemonicParsing="false" text="女" />
+                                          <Label layoutX="289.0" layoutY="124.0" text="图书价格：" />
+                                          <TextField layoutX="359.0" layoutY="118.0" />
+                                          <Label layoutX="75.0" layoutY="175.0" text="图书类别：" />
+                                          <MenuButton layoutX="146.0" layoutY="170.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="168.0" text="请选择">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                                            </items>
+                                          </MenuButton>
+                                          <Label layoutX="75.0" layoutY="220.0" text="图书描述：" />
+                                          <TextArea layoutX="146.0" layoutY="220.0" prefHeight="91.0" prefWidth="380.0" />
+                                          <Button layoutX="165.0" layoutY="348.0" mnemonicParsing="false" text="添加" />
+                                          <Button layoutX="378.0" layoutY="348.0" mnemonicParsing="false" text="重置" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="图书维护">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="241.0" layoutY="22.0" text="图书维护功能">
+                                             <font>
+                                                <Font size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="29.0" layoutY="58.0" text="图书名称：" />
+                                          <TextField layoutX="92.0" layoutY="53.0" prefHeight="27.0" prefWidth="75.0" />
+                                          <Label layoutX="174.0" layoutY="58.0" text="图书作者：" />
+                                          <TextField layoutX="238.0" layoutY="53.0" prefHeight="27.0" prefWidth="82.0" />
+                                          <Label layoutX="325.0" layoutY="58.0" text="图书类别：" />
+                                          <SplitMenuButton layoutX="389.0" layoutY="53.0" mnemonicParsing="false" text="请选择">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                                            </items>
+                                          </SplitMenuButton>
+                                          <Button layoutX="479.0" layoutY="53.0" mnemonicParsing="false" text="查询" />
+                                          <Button layoutX="528.0" layoutY="53.0" mnemonicParsing="false" text="重置" />
+                                          <TableView layoutX="36.0" layoutY="87.0" prefHeight="162.0" prefWidth="527.0">
+                                            <columns>
+                                              <TableColumn prefWidth="57.0" text="编号" />
+                                              <TableColumn prefWidth="77.0" text="图书名称" />
+                                                <TableColumn prefWidth="82.0" text="图书作者" />
+                                                <TableColumn prefWidth="62.0" text="作者性别" />
+                                                <TableColumn prefWidth="75.0" text="图书价格" />
+                                                <TableColumn prefWidth="97.0" text="图书描述" />
+                                                <TableColumn prefWidth="75.0" text="图书类别" />
+                                            </columns>
+                                          </TableView>
+                                          <Label layoutX="29.0" layoutY="260.0" text="编号：" />
+                                          <Label layoutX="29.0" layoutY="296.0" text="价格：" />
+                                          <TextField layoutX="68.0" layoutY="255.0" prefHeight="27.0" prefWidth="91.0" />
+                                          <TextField layoutX="68.0" layoutY="291.0" prefHeight="27.0" prefWidth="90.0" />
+                                          <Label layoutX="174.0" layoutY="260.0" text="图书名称：" />
+                                          <Label layoutX="174.0" layoutY="296.0" text="图书作者：" />
+                                          <TextField layoutX="240.0" layoutY="255.0" prefHeight="27.0" prefWidth="104.0" />
+                                          <TextField layoutX="240.0" layoutY="291.0" prefHeight="27.0" prefWidth="105.0" />
+                                          <Label layoutX="367.0" layoutY="260.0" text="作者性别：" />
+                                          <Label layoutX="367.0" layoutY="296.0" text="图书类别：" />
+                                          <RadioButton layoutX="433.0" layoutY="260.0" mnemonicParsing="false" text="男">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="sex" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton layoutX="482.0" layoutY="260.0" mnemonicParsing="false" text="女" toggleGroup="$sex" />
+                                          <SplitMenuButton layoutX="432.0" layoutY="291.0" mnemonicParsing="false" text="请选择">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                                            </items>
+                                          </SplitMenuButton>
+                                          <Label layoutX="27.0" layoutY="328.0" text="图书描述：" />
+                                          <TextArea layoutX="94.0" layoutY="329.0" prefHeight="46.0" prefWidth="449.0" />
+                                          <Button layoutX="114.0" layoutY="394.0" mnemonicParsing="false" text="修改" />
+                                          <Button layoutX="252.0" layoutY="394.0" mnemonicParsing="false" text="删除" />
+                                          <Button layoutX="390.0" layoutY="394.0" mnemonicParsing="false" text="重置" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="其他">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Accordion prefHeight="508.0" prefWidth="600.0">
+                          <panes>
+                            <TitledPane animated="false" text="退出">
+                                 <content>
+                                    <Button mnemonicParsing="false" text="确定退出系统" />
+                                 </content>
+                              </TitledPane>
+                            <TitledPane animated="false" text="关于软件" />
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

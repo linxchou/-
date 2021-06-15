@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookManageSystem.controller.AdminRegisterController">
+   <children>
+      <Label layoutX="60.0" layoutY="47.0" text="姓名：" />
+      <TextField fx:id="nameTextField" layoutX="146.0" layoutY="34.0" />
+      <TextField fx:id="userNameTextField" layoutX="146.0" layoutY="72.0" />
+      <TextField fx:id="passwordTextField" layoutX="146.0" layoutY="104.0" />
+      <TextField fx:id="password2TextField" layoutX="146.0" layoutY="139.0" />
+      <TextField fx:id="addressTextField" layoutX="146.0" layoutY="203.0" />
+      <TextField fx:id="phoneTextField" layoutX="146.0" layoutY="239.0" />
+      <Label layoutX="49.0" layoutY="244.0" text="电话号码：" />
+      <Button fx:id="adminRegisterButton" layoutX="54.0" layoutY="315.0" mnemonicParsing="false" onAction="#do_adminRegisterButton_event" text="注册" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="175.0" layoutY="176.0" mnemonicParsing="false" text="女">
+         <toggleGroup>
+            <ToggleGroup fx:id="sex" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="maleRadioButton" layoutX="110.0" layoutY="176.0" mnemonicParsing="false" text="男" toggleGroup="$sex" />
+      <Label layoutX="55.0" layoutY="208.0" text="地址：" />
+      <Label layoutX="55.0" layoutY="176.0" text="性别：" />
+      <Label layoutX="55.0" layoutY="144.0" text="再次输入密码：" />
+      <Label layoutX="55.0" layoutY="109.0" text="密码：" />
+      <Label layoutX="55.0" layoutY="77.0" text="用户名：" />
+   </children>
+</AnchorPane>
