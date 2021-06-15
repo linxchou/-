@@ -20,11 +20,11 @@ public class JDBCUtils {
         // 加载驱动
         Class.forName("com.mysql.cj.jdbc.Driver");
         // 连接数据库
-        String url = "jdbc:mysql://rm-bp1ah7g3n14z6r2zr3o.mysql.rds.aliyuncs.com:3309/goods?useSSL=false&serverTimezone=UTC";
+        String url = "";
         // 数据库登录用户名
-        String username = "zhou";
+        String username = "";
         // 数据库登录密码
-        String password = "jay&mechou1003";
+        String password = "";
         // 获取数据库连接对象并返回Connection对象
         return DriverManager.getConnection(url, username, password);
     }
